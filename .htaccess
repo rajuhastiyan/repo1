@@ -1,0 +1,4 @@
+RewriteEngine on
+RewriteRule ^(cron)($|/) - [L]
+RewriteRule !\.(js|ico|gif|jpg|png|css|csv|pdf|docx|doc|zip|cron|swf|php|txt)$ index.php
+RewriteCond %{REQUEST_FILENAME} !-f
